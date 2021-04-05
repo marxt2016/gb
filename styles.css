@@ -96,11 +96,11 @@ a{
 .input_top:focus::-webkit-input-placeholder {
     color:transparent; 
 }
+
 .magnifying{
     width: 36px;
     border-radius: 0 3px 3px 0;
 }
-
 .col_2{
     display: flex;
     align-items: center; 
