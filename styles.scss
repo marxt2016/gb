@@ -879,3 +879,99 @@
     background-color: #f16d7f;
     color: #ffffff;
 }
+
+//Single Page//
+$pinkcolor: #f16d7f;
+$maxwidth: 1616px;
+
+.pinkbanner {
+    max-width: $maxwidth;
+    margin: 0 auto;
+    background-color: #f8f3f4;
+    .pinkbanner_container {
+        height: 148px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .pinktext {
+            color: $pinkcolor;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .breadcrumb {
+            list-style: none;
+            .breadcrumb_li {
+                display: inline;
+            }
+            .breadcrumb_text {
+                text-decoration: none;
+                color: #7a7a7a;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .lasttext {
+                display: inline;
+                font-weight: 700;
+                color: $pinkcolor;
+            }
+
+            .breadcrumb_text:hover {
+                color: $pinkcolor;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.ladybanner {
+    height: 777px;
+    max-width: 1616px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    background-image: url(img/ladybanner.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .boxarrows {
+        width: 47px;
+        height: 47px;
+        background-color: #e1e1e1;
+        text-align: center;
+        font-size: 34px;
+        font-weight: 400;
+
+        .leftarrow,
+        .rightarrow {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+}
+.headerlike {
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+.addmargin {
+    margin-bottom: 70px;
+}
+.formbox {
+    margin-top: -100px;
+    height: 730px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin-bottom: 70px;
+}

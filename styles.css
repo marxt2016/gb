@@ -1136,4 +1136,118 @@
   background-color: #f16d7f;
   color: #ffffff;
 }
+
+.pinkbanner {
+  max-width: 1616px;
+  margin: 0 auto;
+  background-color: #f8f3f4;
+}
+
+.pinkbanner .pinkbanner_container {
+  height: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pinkbanner .pinkbanner_container .pinktext {
+  color: #f16d7f;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pinkbanner .pinkbanner_container .breadcrumb {
+  list-style: none;
+}
+
+.pinkbanner .pinkbanner_container .breadcrumb .breadcrumb_li {
+  display: inline;
+}
+
+.pinkbanner .pinkbanner_container .breadcrumb .breadcrumb_text {
+  text-decoration: none;
+  color: #7a7a7a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pinkbanner .pinkbanner_container .breadcrumb .lasttext {
+  display: inline;
+  font-weight: 700;
+  color: #f16d7f;
+}
+
+.pinkbanner .pinkbanner_container .breadcrumb .breadcrumb_text:hover {
+  color: #f16d7f;
+  text-decoration: underline;
+}
+
+.ladybanner {
+  height: 777px;
+  max-width: 1616px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  background-image: url(img/ladybanner.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ladybanner .boxarrows {
+  width: 47px;
+  height: 47px;
+  background-color: #e1e1e1;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.ladybanner .boxarrows .leftarrow,
+.ladybanner .boxarrows .rightarrow {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.headerlike {
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.addmargin {
+  margin-bottom: 70px;
+}
+
+.formbox {
+  margin-top: -100px;
+  height: 730px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 70px;
+}
 /*# sourceMappingURL=styles.css.map */
