@@ -969,9 +969,148 @@ $maxwidth: 1616px;
     margin-bottom: 70px;
 }
 .formbox {
+    text-align: center;
     margin-top: -100px;
     height: 730px;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
     margin-bottom: 70px;
+    padding: 73px;
+    .narrow_formbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 618px;
+        margin: 0 auto;
+        .textarea {
+            border-bottom: 1px solid #eaeaea;
+            margin-bottom: 63px;
+            .pinkheader {
+                color: $pinkcolor;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px;
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 34px;
+            }
+            .boldheader {
+                color: #4d4d4d;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 24px;
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 67px;
+            }
+            .formbox_text {
+                color: #5e5e5e;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 24px;
+                text-align: center;
+                margin-bottom: 28px;
+            }
+            .design_material_box {
+                margin-bottom: 37px;
+                .combotext {
+                    color: #b9b9b9;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding-right: 35px;
+                }
+                .combotext2 {
+                    color: #2f2f2f;
+                }
+                .nopadding {
+                    padding-right: 0px;
+                }
+            }
+            .pinkprice {
+                color: $pinkcolor;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 24px;
+                text-align: center;
+                margin-bottom: 43px;
+            }
+        }
+        $formareaw: 537px;
+        .formarea {
+            width: $formareaw;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 28px;
+            .textinputs {
+                width: $formareaw/3 - 2;
+                color: #2f2f2f;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px;
+                text-align: center;
+                text-transform: uppercase;
+                display: block;
+                .inputbox {
+                    width: 94%;
+                    height: 35px;
+                    border: 1px solid #eaeaea;
+                    background-color: #ffffff;
+                    color: #bcbcbc;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    padding-left: 10px;
+                    margin-right: 10px;
+                    flex-grow: 1;
+                }
+                .lastbox {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+.pink_to_cart {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 28px;
+}
+.pink_to_cart:hover .pinkbutton_to_cart {
+    background-color: #ffffff;
+    color: $pinkcolor;
+    border: 1px solid $pinkcolor;
+}
+.pink_to_cart:hover .imgcart {
+    display: none;
+}
+.pink_to_cart:hover .imgcarthover {
+    display: flex;
+    width: 26px;
+    height: 24px;
+    padding-right: 10px;
+}
+.imgcar {
+    width: 26px;
+    height: 24px;
+    padding-right: 10px;
+}
+.imgcarthover {
+    display: none;
+}
+.pinkbutton_to_cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    width: 100%;
+    height: 55px;
+    background-color: $pinkcolor;
+    text-decoration: none;
+    color: #ffffff;
 }
