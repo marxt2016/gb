@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single page</title>
+    <title>Shoppingcart</title>
     <link href='http://fonts.googleapis.com/css?family=Lato:wght@300;400;700;900&subset=latin,latin-ext'
         rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -363,7 +363,7 @@
             </nav>
             <div class="pinkbanner">
                 <div class="container">
-                    <div class="pinkbanner_container ">
+                    <div class="pinkbanner_container pinkbanner_bottommargin ">
                         <p class="pinktext">new arrivals</p>
                         <ul class="breadcrumb">
                             <li class="breadcrumb_li"><a class="breadcrumb_text" href="#">Home/</a></li>
@@ -373,124 +373,113 @@
                     </div>
                 </div>
             </div>
-            <div class="ladybanner">
-                <div class="boxarrows"><a class="leftarrow" href="#"><i class="fa fa-angle-left"></i></a></div>
-                <div class="boxarrows"><a class="rightarrow" href="#"><i class="fa fa-angle-right"></i></a>
-                </div>
+        </div>
+    </div>
+    <div class="product_table_header container">
+        <div class="col1_header col1_header_w">
+            <p class="text_productDetails">Product details</p>
+        </div>
+        <div class="col1_header col2_header_w">
+            <p class="text_productDetails">unit price</p>
+            <p class="text_productDetails">quantity</p>
+            <p class="text_productDetails">shipping</p>
+            <p class="text_productDetails">subtotal</p>
+            <p class="text_productDetails">action</p>
+        </div>
+    </div>
+    <div class="product_table container">
+        <div class="product_row">
+            <div class="col1_pict">
+                <a href="#" class="product_description">
+                    <img src="img/cartcontent.png" alt="cartcontent">
+                    <div class="product_description_box">
+                        <p class="header_description">Mango People T-shirt</p>
+                        <p class="text_description">Color: <span class="smalltext">Red</span> <br>
+                            Size: <span class="smalltext">Xll</span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="col2_values">
+                <p class="carttext"> $120</p>
+                <input type="number" class="tableinput">
+                <p class="carttext"> FREE</p>
+                <p class="carttext"> $120</p>
+                <a class="deletecircle carttext" href="#"><i class="fa fa-times-circle"></i></a>
+            </div>
+        </div>
+        <div class="product_row">
+            <div class="col1_pict">
+                <a href="#" class="product_description">
+                    <img src="img/cartcontent.png" alt="cartcontent">
+                    <div class="product_description_box">
+                        <p class="header_description">Mango People T-shirt</p>
+                        <p class="text_description">Color: <span class="smalltext">Red</span> <br>
+                            Size: <span class="smalltext">Xll</span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="col2_values">
+                <p class="carttext"> $120</p>
+                <input type="number" class="tableinput">
+                <p class="carttext"> FREE</p>
+                <p class="carttext"> $120</p>
+                <a class="deletecircle carttext" href="#"><i class="fa fa-times-circle"></i></a>
+            </div>
+        </div>
+        <div class="product_row">
+            <div class="col1_pict">
+                <a href="#" class="product_description">
+                    <img src="img/cartcontent.png" alt="cartcontent">
+                    <div class="product_description_box">
+                        <p class="header_description">Mango People T-shirt</p>
+                        <p class="text_description">Color: <span class="smalltext">Red</span> <br>
+                            Size: <span class="smalltext">Xll</span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="col2_values">
+                <p class="carttext"> $120</p>
+                <input type="number" class="tableinput">
+                <p class="carttext"> FREE</p>
+                <p class="carttext"> $120</p>
+                <a class="deletecircle carttext" href="#"><i class="fa fa-times-circle"></i></a>
             </div>
         </div>
     </div>
-    <div class="formbox container">
-        <div class="narrow_formbox">
-            <div class="textarea">
-                <h3 class="pinkheader">WOMEN COLLECTION</h3>
-                <h2 class="boldheader">Moschino Cheap And Chic</h2>
-                <p class="formbox_text">Compellingly actualize fully researched processes before proactive outsourcing.
-                    Progressively syndicate collaborative
-                    architectures before cutting-edge services. Completely visualize parallel core competencies rather
-                    than
-                    exceptional
-                    portals.
-                </p>
-                <div class="design_material_box">
-                    <span class="combotext">MATERIAL: <span class="combotext2">COTTON</span></span>
-                    <span class="combotext nopadding">DESIGNER: <span class="combotext2">BINBURHAN</span></span>
-                </div>
-                <p class="pinkprice">$123,9</p>
-            </div>
-            <form class="formarea">
-                <label class="textinputs" for="colorpicker">choose color <br> <select class="inputbox" type="select"
-                        name="color" id="colorpicker">
-                        <option value="" selected disabled hidden></option>
-                        <option value="blue" style="color:blue">&#9632; blue</option>
-                        <option value="red" style="color:red">&#9632; red</option>
-                        <option value="green" style="color:green">&#9632; green</option>
-                        <option value="black" style="color:black">&#9632; black</option>
-                        <option value="yellow" style="color:yellow">&#9632; yellow</option>
-                    </select></label><br>
-                <label class="textinputs" for="size">choose size<br><select class="inputbox" type="select" name="size"
-                        id="size">
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                        <option value="XL" selected>XL</option>
-                    </select>
-                </label><br>
-                <label class="textinputs" for="num">quantity <br><input class="inputbox lastbox" type="number"
-                        name="num" id="num" min="1" max="99"></label><br>
-                <div class="pink_to_cart">
-                    <a class="pinkbutton_to_cart" href="#">
-                        <img class="imgcarthover" src="img/pinkshoppingcart.png" alt="cart_pink">
-                        <img class="imgcar" src="img/Cart_white.png" alt="cart_white">
-
-                        <p class="addcarttext">Add to cart</p>
-                    </a>
-                </div>
-            </form>
-
+    <div class="table_buttons container">
+        <div class="col1_button">
+            <a class="cart_checkout cart_go_to" href="#">CLEAR SHOPPING CART</a>
+        </div>
+        <div class="col1_button">
+            <a class="cart_checkout cart_go_to" href="#">CONTINUE SHOPPING</a>
         </div>
     </div>
-    <h3 class="headerlike">you may like also</h3>
-    <div class="featured container addmargin">
-        <div class="featured_item">
-            <a class="image_featured" href="#">
-                <img class="image_item" src="img/fitem1.png" alt="item1">
-                <div class="featured_name_price">
-                    <p class="featured_item_text">Mango People T-shirt</p>
-                    <p class="featured_item_price">$ 45.67</p>
-                </div>
-            </a>
-            <div class="to_cart">
-                <a class="button_to_cart" href="#">
-                    <img src="img/Cart_white.png" alt="cart_white">
-                    <p class="to_cart_text">Add to Cart</p>
-                </a>
-            </div>
+    <div class="cart_forms_container container">
+        <div class="cart_form first_box">
+            <h2 class="header_cart_form">Shipping Adress</h2>
+            <select class="selectstate cart_form_input" type="select" name="state" id="state">
+                <option value="Arizona">Arizona</option>
+                <option value="New York">New York</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Tennesy" selected>Tennesy</option>
+            </select>
+            <input class="cart_form_input" type="text" maxlength="20" placeholder="State">
+            <input class="cart_form_input" type="text" maxlength="10" placeholder="Postalcode/Zip">
+            <a class="cart_checkout cart_go_to get_a_qoute" href="#">get a quote</a>
         </div>
-        <div class="featured_item">
-            <a class="image_featured" href="#">
-                <img class="image_item" src="img/fitem1.png" alt="item1">
-                <div class="featured_name_price">
-                    <p class="featured_item_text">Mango People T-shirt</p>
-                    <p class="featured_item_price">$ 45.67</p>
-                </div>
-            </a>
-            <div class="to_cart">
-                <a class="button_to_cart" href="#">
-                    <img src="img/Cart_white.png" alt="cart_white">
-                    <p class="to_cart_text">Add to Cart</p>
-                </a>
-            </div>
+        <div class="cart_form middle_box">
+            <h2 class="header_cart_form">coupon discount</h2>
+            <p class="cart_form_smalltext">Enter your coupon code if you have one</p>
+            <input class="cart_form_input" type="text">
+            <a class="cart_checkout cart_go_to get_a_qoute" href="#">apply coupon</a>
         </div>
-        <div class="featured_item">
-            <a class="image_featured" href="#">
-                <img class="image_item" src="img/fitem1.png" alt="item1">
-                <div class="featured_name_price">
-                    <p class="featured_item_text">Mango People T-shirt</p>
-                    <p class="featured_item_price">$ 45.67</p>
-                </div>
-            </a>
-            <div class="to_cart">
-                <a class="button_to_cart" href="#">
-                    <img src="img/Cart_white.png" alt="cart_white">
-                    <p class="to_cart_text">Add to Cart</p>
-                </a>
+        <div class="cart_form last_box">
+            <div class="text_last_box">
+                <p class="line1_last_box">Sub total <span>&nbsp&nbsp&nbsp&nbsp&nbsp</span> $900</p>
+                <p class="line2_last_box">GRAND TOTAL <span>&nbsp&nbsp&nbsp&nbsp&nbsp</span> <span class="totalpink">
+                        $900</span></p>
             </div>
-        </div>
-        <div class="featured_item">
-            <a class="image_featured" href="#">
-                <img class="image_item" src="img/fitem1.png" alt="item1">
-                <div class="featured_name_price">
-                    <p class="featured_item_text">Mango People T-shirt</p>
-                    <p class="featured_item_price">$ 45.67</p>
-                </div>
-            </a>
-            <div class="to_cart">
-                <a class="button_to_cart" href="#">
-                    <img src="img/Cart_white.png" alt="cart_white">
-                    <p class="to_cart_text">Add to Cart</p>
-                </a>
-            </div>
+            <a class="cart_checkout last_box_button" href="#">proceed to checkout</a>
         </div>
     </div>
 

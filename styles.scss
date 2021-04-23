@@ -1080,37 +1080,232 @@ $maxwidth: 1616px;
     justify-content: center;
     width: 100%;
     margin-top: 28px;
+    .pink_to_cart:hover .pinkbutton_to_cart {
+        background-color: #ffffff;
+        color: $pinkcolor;
+        border: 1px solid $pinkcolor;
+    }
+    .pink_to_cart:hover .imgcart {
+        display: none;
+    }
+    .pink_to_cart:hover .imgcarthover {
+        display: flex;
+        width: 26px;
+        height: 24px;
+        padding-right: 10px;
+        position: absolute;
+        right: 57%;
+        z-index: 1;
+    }
+    .pinkbutton_to_cart {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid transparent;
+        width: 100%;
+        height: 55px;
+        background-color: $pinkcolor;
+        text-decoration: none;
+        color: #ffffff;
+        .imgcar {
+            width: 26px;
+            height: 24px;
+            padding-right: 10px;
+            position: absolute;
+            right: 57%;
+        }
+        .imgcarthover {
+            display: none;
+        }
+    }
 }
-.pink_to_cart:hover .pinkbutton_to_cart {
-    background-color: #ffffff;
-    color: $pinkcolor;
-    border: 1px solid $pinkcolor;
-}
-.pink_to_cart:hover .imgcart {
-    display: none;
-}
-.pink_to_cart:hover .imgcarthover {
+//Shopping Cart//
+%table_items_position {
     display: flex;
-    width: 26px;
-    height: 24px;
-    padding-right: 10px;
+    justify-content: space-between;
 }
-.imgcar {
-    width: 26px;
-    height: 24px;
-    padding-right: 10px;
+
+$conainerwidth: 1142px;
+
+.pinkbanner_bottommargin {
+    margin-bottom: 90px;
 }
-.imgcarthover {
-    display: none;
+.product_table {
+    margin-bottom: 44px;
 }
-.pinkbutton_to_cart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid transparent;
-    width: 100%;
-    height: 55px;
-    background-color: $pinkcolor;
-    text-decoration: none;
-    color: #ffffff;
+.product_table_header {
+    @extend %table_items_position;
+    .text_productDetails {
+        color: #222222;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+    .col1_header {
+        @extend %table_items_position;
+    }
+    .col1_header_w {
+        width: 40%;
+    }
+    .col2_header_w {
+        width: 60%;
+    }
+}
+.product_row {
+    @extend %table_items_position;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    .col1_pict {
+        @extend %table_items_position;
+        width: 40%;
+        .product_description_box {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 100%;
+            text-align: left;
+        }
+        .product_description {
+            @extend %table_items_position;
+            padding: 15px;
+            .header_description {
+                text-decoration: none;
+                color: #222222;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .text_description {
+                color: #6f6e6e;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 20px;
+                text-align: left;
+                .smalltext {
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    .col2_values {
+        @extend %table_items_position;
+        width: 60%;
+        align-items: center;
+        .carttext {
+            text-align: center;
+            padding: 15px;
+        }
+        .tableinput {
+            text-align: center;
+            width: 54px;
+            height: 30px;
+            border: 1px solid #eaeaea;
+            background-color: #ffffff;
+            margin-left: 10px;
+        }
+    }
+}
+.table_buttons {
+    @extend %table_items_position;
+    margin-bottom: 63px;
+}
+.cart_forms_container {
+    @extend %table_items_position;
+    margin-bottom: 63px;
+    height: 300px;
+    .cart_form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: $conainerwidth/3;
+        padding-right: 2%;
+
+        .header_cart_form {
+            color: #222222;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        .get_a_qoute {
+            font-size: 11px;
+            font-weight: 700;
+            text-align: left;
+            text-transform: uppercase;
+            width: fit-content;
+        }
+        .get_a_qoute:hover {
+            color: $pinkcolor;
+        }
+        .cart_form_input {
+            color: #b1b1b1;
+            width: 90%;
+            height: 45px;
+            border: 1px solid #eaeaea;
+            background-color: #ffffff;
+            padding-left: 17px;
+        }
+        .cart_form_input:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+    }
+    .last_box {
+        background-color: #f5f3f3;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-end;
+        .text_last_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-bottom: 1px solid #e2e2e2;
+            text-align: right;
+            width: 80%;
+            height: 30%;
+            .line1_last_box {
+                color: #4a4a4a;
+                font-size: 11px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            .line2_last_box {
+                color: #222222;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                .totalpink {
+                    color: $pinkcolor;
+                }
+            }
+        }
+        .last_box_button {
+            width: 70%;
+        }
+    }
+    .middle_box {
+        height: 70%;
+        .cart_form_smalltext {
+            color: #000000;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: left;
+        }
+    }
+    .first_box {
+        height: 100%;
+        .selectstate {
+            width: 95%;
+        }
+    }
+}
+.get_a_qoute {
+    width: 20%;
 }
