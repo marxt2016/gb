@@ -8,6 +8,9 @@
     list-style-type: none;
 }
 
+.a {
+    text-decoration: none;
+}
 .container {
     max-width: 1142px;
     margin: 0 auto;
@@ -1068,9 +1071,13 @@ $maxwidth: 1616px;
                     padding-left: 10px;
                     margin-right: 10px;
                     flex-grow: 1;
+                    .colorbox {
+                        color: $pinkcolor;
+                    }
                 }
                 .lastbox {
                     margin-right: 0px;
+                    height: 33px;
                 }
             }
         }
@@ -1505,6 +1512,96 @@ $conainerwidth: 1142px;
             .product_header {
                 display: block;
                 padding: 30px;
+            }
+        }
+    }
+}
+
+//accordion//
+.panel {
+    margin-bottom: 60px;
+    summary {
+        color: #222222;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    .accordpanel {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .acc_col {
+            width: 50%;
+
+            .col_content {
+                padding-left: 20px;
+                height: 350px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .col_block {
+                    .txt_headeraccord {
+                        color: #222222;
+                        font-size: 13px;
+                        font-weight: 700;
+                        text-align: left;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                    }
+                    .txt_paccord {
+                        color: #b3b2b2;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        text-align: left;
+                        margin-bottom: 20px;
+                    }
+                    .minusmargin {
+                        margin-bottom: 0px;
+                    }
+                    .radio {
+                        margin-bottom: 10px;
+                    }
+                    .minuspix {
+                        font-size: 12px;
+                    }
+                    .email {
+                        height: 45px;
+                        border: 1px solid #eaeaea;
+                        width: 60%;
+                        padding-left: 15px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    .minuspix::after {
+                        content: "*";
+                        color: red;
+                    }
+                    .redtext {
+                        color: red;
+                    }
+                }
+                .continue {
+                    width: 30%;
+                }
+                .col_links {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .forgot {
+                        color: #222222;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        text-align: left;
+                        margin-left: 20px;
+                    }
+                    .forgot:hover {
+                        color: $pinkcolor;
+                    }
+                }
             }
         }
     }

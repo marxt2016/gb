@@ -9,6 +9,10 @@
   list-style-type: none;
 }
 
+.a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1142px;
   margin: 0 auto;
@@ -1375,8 +1379,13 @@
           flex-grow: 1;
 }
 
+.formbox .narrow_formbox .formarea .textinputs .inputbox .colorbox {
+  color: #f16d7f;
+}
+
 .formbox .narrow_formbox .formarea .textinputs .lastbox {
   margin-right: 0px;
+  height: 33px;
 }
 
 .pink_to_cart {
@@ -1951,5 +1960,124 @@
 .black_banner .product_page_align .product_with_pic .product_header {
   display: block;
   padding: 30px;
+}
+
+.panel {
+  margin-bottom: 60px;
+}
+
+.panel summary {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.panel .accordpanel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.panel .accordpanel .acc_col {
+  width: 50%;
+}
+
+.panel .accordpanel .acc_col .col_content {
+  padding-left: 20px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.panel .accordpanel .acc_col .col_content .col_block .txt_headeraccord {
+  color: #222222;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.panel .accordpanel .acc_col .col_content .col_block .txt_paccord {
+  color: #b3b2b2;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.panel .accordpanel .acc_col .col_content .col_block .minusmargin {
+  margin-bottom: 0px;
+}
+
+.panel .accordpanel .acc_col .col_content .col_block .radio {
+  margin-bottom: 10px;
+}
+
+.panel .accordpanel .acc_col .col_content .col_block .minuspix {
+  font-size: 12px;
+}
+
+.panel .accordpanel .acc_col .col_content .col_block .email {
+  height: 45px;
+  border: 1px solid #eaeaea;
+  width: 60%;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.panel .accordpanel .acc_col .col_content .col_block .minuspix::after {
+  content: "*";
+  color: red;
+}
+
+.panel .accordpanel .acc_col .col_content .col_block .redtext {
+  color: red;
+}
+
+.panel .accordpanel .acc_col .col_content .continue {
+  width: 30%;
+}
+
+.panel .accordpanel .acc_col .col_content .col_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel .accordpanel .acc_col .col_content .col_links .forgot {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.panel .accordpanel .acc_col .col_content .col_links .forgot:hover {
+  color: #f16d7f;
 }
 /*# sourceMappingURL=styles.css.map */
