@@ -468,6 +468,7 @@
   font-weight: 400;
   line-height: 28px;
   display: block;
+  width: 80px;
 }
 
 .mega_link:hover {
@@ -806,6 +807,34 @@
   line-height: normal;
   text-align: left;
   text-transform: uppercase;
+}
+
+@-webkit-keyframes spin {
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.box_with_pic:hover .banner_item_icon2 {
+  -webkit-animation: spin 2s ease-out;
+          animation: spin 2s ease-out;
+}
+
+.box_with_pic:hover .banner_item_icon3 {
+  -webkit-transform: scale(1.2) rotate(360deg);
+          transform: scale(1.2) rotate(360deg);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
 .text_box {
@@ -1966,13 +1995,36 @@
   margin-bottom: 60px;
 }
 
+.panel details {
+  border-bottom: #eaeaea solid 1px;
+  margin-bottom: 20px;
+}
+
+.panel details:hover {
+  cursor: pointer;
+}
+
 .panel summary {
   color: #222222;
   font-size: 16px;
   font-weight: 700;
   text-align: left;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.panel summary:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  cursor: pointer;
 }
 
 .panel .accordpanel {
@@ -1983,6 +2035,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .panel .accordpanel .acc_col {

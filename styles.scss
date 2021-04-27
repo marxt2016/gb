@@ -11,6 +11,7 @@
 .a {
     text-decoration: none;
 }
+
 .container {
     max-width: 1142px;
     margin: 0 auto;
@@ -364,6 +365,7 @@
     font-weight: 400;
     line-height: 28px;
     display: block;
+    width: 80px;
 }
 .mega_link:hover {
     color: #f16d7f;
@@ -620,6 +622,7 @@
     background-repeat: no-repeat;
     position: relative;
 }
+
 .span_display {
     display: inline-block;
 }
@@ -635,6 +638,19 @@
     line-height: normal;
     text-align: left;
     text-transform: uppercase;
+}
+@keyframes spin {
+    50% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.box_with_pic:hover .banner_item_icon2 {
+    animation: spin 2s ease-out;
+}
+.box_with_pic:hover .banner_item_icon3 {
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 1s ease-in-out;
 }
 .text_box {
     font-size: 54px;
@@ -1520,18 +1536,34 @@ $conainerwidth: 1142px;
 //accordion//
 .panel {
     margin-bottom: 60px;
+    details {
+        border-bottom: #eaeaea solid 1px;
+        margin-bottom: 20px;
+    }
+    details:hover {
+        cursor: pointer;
+    }
     summary {
         color: #222222;
         font-size: 16px;
         font-weight: 700;
         text-align: left;
         text-transform: uppercase;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        transition: transform 0.5s ease;
+        transform-origin: bottom left;
     }
+    summary:hover {
+        transform: scale(1.1);
+        transform-origin: bottom left;
+        cursor: pointer;
+    }
+
     .accordpanel {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 30px;
         .acc_col {
             width: 50%;
 
