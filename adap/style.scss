@@ -1,0 +1,263 @@
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration-color: none;
+    text-decoration: none;
+    outline: none;
+    list-style-type: none;
+}
+
+.a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1142px;
+    margin: 0 auto;
+}
+
+%table_items_position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+$colorbl: #222222;
+$colorpink: #f1e4e6;
+
+.header {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: $colorbl;
+    padding: 1%;
+    box-sizing: border-box;
+    .container {
+        max-width: 1142px;
+        margin: 0 auto;
+        .header_row {
+            @extend %table_items_position;
+            flex-wrap: wrap;
+            .col1 {
+                @extend %table_items_position;
+                flex-grow: 0.08;
+                .pict {
+                    padding: 5%;
+                }
+            }
+            .col2 {
+                @extend %table_items_position;
+                flex-grow: 0.1;
+                .pict {
+                    padding: 10%;
+                }
+            }
+        }
+    }
+}
+.content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: $colorpink;
+
+    .banner {
+        @extend %table_items_position;
+        .bannerpic {
+            margin-left: -20%;
+            flex-grow: 1;
+            .banner {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .banner_container {
+            display: flex;
+            flex-grow: 1;
+            .rectangle {
+                padding-top: 10px;
+                content: "";
+                width: 12px;
+                height: 100px;
+                margin-right: 10px;
+                background-color: #f16d7f;
+            }
+            .text_container {
+                color: #222222;
+                font-size: 40px;
+                font-weight: 900;
+                text-align: left;
+                text-transform: uppercase;
+                display: inline-block;
+            }
+            .brand_text_banner {
+                color: #222222;
+                font-weight: 900;
+                text-align: left;
+                text-transform: uppercase;
+                font-size: 55px;
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    %items_position {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    $colorbl: #222222;
+    $colorpink: #f1e4e6;
+
+    .header {
+        max-width: 1600px;
+        margin: 0 auto;
+        background-color: $colorbl;
+        .container {
+            max-width: 1142px;
+            margin: 0 auto;
+            .header_row {
+                @extend %items_position;
+                flex-wrap: wrap;
+                .col1 {
+                    @extend %items_position;
+                    flex-grow: 0.08;
+                    .pict {
+                        padding: 5%;
+                    }
+                }
+                .col2 {
+                    @extend %items_position;
+                    justify-content: center;
+                    flex-grow: 0.1;
+                    .pict {
+                        padding: 10%;
+                    }
+                    .pers {
+                        display: none;
+                    }
+                    .cart {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        max-width: 1600px;
+        margin: 0 auto;
+        background-color: $colorpink;
+
+        .banner {
+            @extend %items_position;
+            min-height: 376px;
+            .bannerpic {
+                display: none;
+            }
+            .banner_container {
+                display: flex;
+                .rectangle {
+                    padding-top: 10px;
+                    content: "";
+                    width: 12px;
+                    height: 61px;
+                    margin-left: 50px;
+                    background-color: #f16d7f;
+                }
+                .text_container {
+                    color: #222222;
+                    font-size: 20px;
+                    font-weight: 900;
+                    text-align: left;
+                    text-transform: uppercase;
+                    display: inline-block;
+                }
+                .brand_text_banner {
+                    color: #222222;
+                    font-weight: 900;
+                    text-align: left;
+                    text-transform: uppercase;
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    %items_position_ipad {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    $colorbl: #222222;
+    $colorpink: #f1e4e6;
+
+    .header {
+        margin: 0 auto;
+        background-color: $colorbl;
+        .container {
+            max-width: 1142px;
+            margin: 0 auto;
+            .header_row {
+                @extend %items_position_ipad;
+                flex-wrap: wrap;
+                .col1 {
+                    @extend %items_position_ipad;
+                    flex-grow: 0.08;
+                    .pict {
+                        padding: 5%;
+                    }
+                }
+                .col2 {
+                    @extend %items_position_ipad;
+                    justify-content: space-around;
+                    flex-grow: 0.1;
+                    .pict {
+                        padding: 10%;
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        margin: 0 auto;
+        background-color: $colorpink;
+        .banner {
+            @extend %items_position_ipad;
+            min-height: 376px;
+            justify-content: space-around;
+            .bannerpic {
+                flex-grow: 1;
+                margin-left: 0px;
+                .bannerm {
+                    height: 376px;
+                }
+            }
+            .banner_container {
+                display: flex;
+                flex-grow: 1;
+                .rectangle {
+                    padding-top: 10px;
+                    content: "";
+                    width: 12px;
+                    height: 78px;
+                    background-color: #f16d7f;
+                }
+                .text_container {
+                    color: #222222;
+                    font-size: 20px;
+                    font-weight: 900;
+                    text-align: left;
+                    text-transform: uppercase;
+                    display: inline-block;
+                }
+                .brand_text_banner {
+                    color: #222222;
+                    font-weight: 900;
+                    text-align: left;
+                    text-transform: uppercase;
+                    font-size: 44px;
+                }
+            }
+        }
+    }
+}
